@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EF9D47C-BE5F-4A2B-B524-F7417F83F794}</ProjectGuid>
+    <ProjectGuid>{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContosoUniversity.DataAccessLayer</RootNamespace>
-    <AssemblyName>ContosoUniversity.DataAccessLayer</AssemblyName>
+    <RootNamespace>ContosoUniversity.BusinessLogicLayer</RootNamespace>
+    <AssemblyName>ContosoUniversity.BusinessLogicLayer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,7 +45,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,14 +57,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\businessEntities\businessEntities.csproj">
       <Project>{38a78e4d-ebd5-44f7-b389-70c9f4cb7598}</Project>
       <Name>businessEntities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <ProjectReference Include="..\ContosoUniversity.DataAccessLayer\ContosoUniversity.DataAccessLayer.csproj">
+      <Project>{2ef9d47c-be5f-4a2b-b524-f7417f83f794}</Project>
+      <Name>ContosoUniversity.DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

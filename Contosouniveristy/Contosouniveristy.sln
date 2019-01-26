@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "businessEntities", "busines
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.DataAccessLayer", "ContosoUniversity.DataAccessLayer\ContosoUniversity.DataAccessLayer.csproj", "{2EF9D47C-BE5F-4A2B-B524-F7417F83F794}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.BusinessLogicLayer", "ContosoUniversity.BusinessLogicLayer\ContosoUniversity.BusinessLogicLayer.csproj", "{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2EF9D47C-BE5F-4A2B-B524-F7417F83F794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EF9D47C-BE5F-4A2B-B524-F7417F83F794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EF9D47C-BE5F-4A2B-B524-F7417F83F794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234D0F1B-EDC2-4E55-B665-ABF7D2F77480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
