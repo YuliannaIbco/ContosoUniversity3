@@ -82,7 +82,7 @@ namespace ContosoUniversity.BusinessLogicLayer2
         {
             List<Student> students = new List<Student>();
 
-            students = ContosoUniversity.DataAccessLayer.StudentDAL.getAllStudents();
+            students = ContosoUniversity.DataAccessLayer.StudentDAL.getAllStudent();
 
             return students;
         }
@@ -90,7 +90,7 @@ namespace ContosoUniversity.BusinessLogicLayer2
         {
             List<Student> students = new List<Student>();
 
-            students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentByLastName(lastname);
+            students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentsByLastName(lastname);
 
             return students;
         }
@@ -106,7 +106,7 @@ namespace ContosoUniversity.BusinessLogicLayer2
         {
             List<Student> students = new List<Student>();
 
-            students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentById(id);
+            students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentByID(id);
 
             return students;
         }
@@ -120,11 +120,11 @@ namespace ContosoUniversity.BusinessLogicLayer2
                     students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentByFirstMidName(filter);
                     break;
                 case "LastName":
-                    students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentByLastName(filter);
+                    students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentsByLastName(filter);
                     break;
                 case "Id":
                     int id = Convert.ToInt32(filter);
-                    students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentById(id);
+                    students = ContosoUniversity.DataAccessLayer.StudentDAL.getStudentByID(id);
                     break;
             }
             return students;
